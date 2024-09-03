@@ -1,0 +1,145 @@
+*{
+    margin: 0; 
+}
+body{
+    background: #eefaff;
+}
+.nav-icon i{
+    font-size: 50px;
+}
+.navbar-nav a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-nav li > a:after{
+content:' ';
+display:block;
+width:0;
+height:4px;
+border-radius: 2px;
+background:#ff9900;
+transition:width .5s;
+}
+.navbar-nav li > a:hover::after{
+width:100%;
+
+}
+
+.carousel-item img{
+    height: 100vh;
+    min-height: 300px;
+    padding-top: 85px;
+}
+.carousel-caption{
+    bottom: 250px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-top:-35px !important;
+    animation-name: text;
+    animation-duration: 2s;
+}
+
+.underline{
+    height: 5px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #ff9900;
+    margin: 0px auto;
+}
+
+/* css text-animation start here */
+@keyframes text{
+0%{
+display: none;
+}
+25%{
+    letter-spacing: 8px;
+}
+50%{
+    letter-spacing: 2px;
+}
+100%{
+    display: none;
+}
+}
+/* css text-animation start here */
+
+span.bold{
+    background-color:#ff9900;
+    padding: 10px;
+    font-size: 62px !important;
+}
+.carousel-inner::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100vh !important;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.arrow{
+    margin-top: 120px;
+    display: none;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+.button{
+  box-shadow: 3px 2px 2px black; 
+}
+
+
+
+
+/*   - - - responsive css - - - */
+
+@media only screen and (min-width:300px) and (max-width:567px){
+    .carousel-caption{
+        bottom: 190px;
+    }
+    span.bold{
+        font-size: 18px !important;
+        padding: 3px;
+    }
+    .carousel-item{
+        height: 100vh !important;
+    }
+    .carousel-caption h5{
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    
+}
+
+@media only screen and (min-width:568px) and (max-width:991px){
+    .carousel-caption{
+    bottom: 190px;
+    }
+    .carousel-caption h5{
+        font-size: 28px;
+    }
+    span.bold{
+        font-size: 32px !important;
+        padding: 5px;
+    }
+    .nav-text h3{
+        margin-left: -95% !important;
+    }
+}
+@media only screen and (min-width:991px) and (max-width:1500px){
+    .carousel-caption{
+        bottom: 250px !important;
+        }
+}
+
+
+
+

@@ -1,0 +1,33 @@
+/* carousel style start here for big screen  */
+.carousel-main {
+    margin-top: 100px;
+}
+
+.d-block {
+    border-radius: 30px;
+    height: 400px;
+    width: 800px;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+
+/* carousel style end here for big screen  */
+
+
+/* carousel style start here for small screen  */
+@media screen and (max-width:500px) {
+    .d-block {
+        border-radius: 30px;
+        height: 250px !important;
+        width: 250px !important;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+/* carousel style end here for small screen  */

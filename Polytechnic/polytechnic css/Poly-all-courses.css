@@ -1,0 +1,61 @@
+/* all courses style start here for big screen  */
+.all-courses-main {
+    margin-top: 50px;
+}
+
+.branches-names {
+    margin-top: 30px;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.branch {
+    max-width: 400px;
+    height: 550px;
+    margin-top: 20px;
+}
+
+.branch-pic {
+    height: 400px;
+}
+
+.footer-of-branches-contianer {
+    background-color: cadetblue;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.branch-span {
+    color: orangered;
+}
+
+.footer-of-branches h4 {
+    color: yellow !important;
+}
+
+
+/* all courses style end here for big screen  */
+
+@media screen and (max-width:600px) {
+    .all-courses-main {
+        margin-top: 50px;
+    }
+
+    .branches-names {
+        margin-top: 30px;
+        display: block
+    }
+
+    .branch {
+        max-width: 400px;
+        height: 550px;
+        margin-top: 20px;
+    }
+
+    .branch-pic {
+        height: 400px;
+    }
+}
